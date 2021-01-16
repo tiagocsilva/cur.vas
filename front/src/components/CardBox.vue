@@ -1,7 +1,7 @@
 <template>
   <b-card
-    class="catalog-list-item"
-    ref="catalogListItem"
+    class="card-box"
+    ref="cardBox"
   >
     <b-card-title>{{title}}</b-card-title>
 
@@ -17,11 +17,11 @@ export default {
   mounted() {
     const scene = this.$scrollmagic
       .scene({
-        triggerElement: this.$refs.catalogListItem,
+        triggerElement: this.$refs.cardBox,
         triggerHook: 1,
         duration: 1,
       })
-      .setTween(this.$refs.catalogListItem, {
+      .setTween(this.$refs.cardBox, {
         css: {
           opacity: 1,
           rotation: 360,
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss">
-.catalog-list-item {
+.card-box {
   min-width: 200px;
   margin: 10px 0px;
   border-bottom-right-radius: 30px;

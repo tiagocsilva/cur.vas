@@ -6,7 +6,7 @@
     >
       <b-row class="mt-4">
         <b-col class="mb-3" v-for="(course, i) in list" :key="i">
-          <catalog-list-item
+          <card-box
             :title="course.title"
             :description="course.description"
           />
@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import CatalogListItem from "./CatalogListItem.vue";
+import CardBox from "@/components/CardBox.vue";
 export default {
   props: ['list'],
   components: {
-    CatalogListItem,
+    CardBox,
   },
 };
 </script>

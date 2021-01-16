@@ -10,35 +10,35 @@
  
       <b-row class="mt-4">
         <b-col class="mb-3">
-          <opportunities-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <opportunities-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <opportunities-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <opportunities-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <opportunities-item
+          <card-box
             description="Conheça todas as nossas oportunidades"
             class="last-opportunities-card"
           />
@@ -56,10 +56,10 @@
 </template>
 
 <script>
-import OpportunitiesItem from "./OpportunitiesItem.vue";
+import CardBox from "@/components/CardBox.vue";
 export default {
   components: {
-    OpportunitiesItem,
+    CardBox,
   },
 };
 </script>

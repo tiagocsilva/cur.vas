@@ -4,39 +4,41 @@
     <b-container>
       <h1 class="pt-4">Nosso catálogo</h1>
 
-      talvez aqui podemos colocar uma frase de motivação pra fazer o curso.
+      <div class="mb-4">
+        talvez aqui podemos colocar uma frase de motivação pra fazer o curso.
+      </div>
 
-      <b-row class="mt-4">
+      <b-row>
         <b-col class="mb-3">
-          <catalog-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <catalog-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <catalog-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <catalog-item
+          <card-box
             title="Card Title"
             description="Some quick example text to build on the card title and make up the bulk of the card's content."
           />
         </b-col>
 
         <b-col class="mb-3">
-          <catalog-item
+          <card-box
             description="Conheça nosso catálogo completo"
             class="last-catalog-card"
           />
@@ -49,10 +51,10 @@
 </template>
 
 <script>
-import CatalogItem from "./CatalogItem.vue";
+import CardBox from "@/components/CardBox.vue";
 export default {
   components: {
-    CatalogItem,
+    CardBox,
   },
 };
 </script>
