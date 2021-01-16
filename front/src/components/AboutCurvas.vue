@@ -1,5 +1,5 @@
 <template>
-  <section class="about-curvas p-4 pt-5">
+  <section class="about-curvas p-4">
 
     <b-container fluid>
       <h1>O que é Cur.Vas?</h1>
@@ -18,7 +18,8 @@
   background: #c4c4c4;
   min-height: 300px;
   text-align: left;
-  padding-bottom: 50px;
+  padding-top: 70px !important;
+  padding-bottom: 60px !important;
 
   p {
     width: 800px;

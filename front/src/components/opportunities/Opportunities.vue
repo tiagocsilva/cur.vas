@@ -69,7 +69,7 @@ export default {
 .opportunities {
   min-height: 300px;
   text-align: left;
-  padding-bottom: 50px;
+  padding-bottom: 130px;
 }
 
 .last-opportunities-card {

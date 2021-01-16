@@ -14,11 +14,13 @@
 
     </div>
 
-    <quick-start-dialog class="dialog" />
+    <quick-start-dialog class="quick-start-dialog" />
 
     <catalog class="catalog" />
-    
+
     <opportunities />
+
+    <about-dialog class="about-dialog" />
 
     <about-curvas />
 
@@ -32,13 +34,15 @@
 import TopMenu from "@/components/topMenu/TopMenu.vue";
 import QuickStartDialog from "@/components/QuickStartDialog.vue";
 import Catalog from "@/components/catalog/Catalog.vue";
-import Opportunities from '@/components/opportunities/Opportunities.vue';
-import AboutCurvas from '@/components/AboutCurvas.vue';
+import Opportunities from "@/components/opportunities/Opportunities.vue";
+import AboutCurvas from "@/components/AboutCurvas.vue";
+import AboutDialog from "@/components/AboutDialog.vue";
 
 export default {
   components: {
     TopMenu,
     Catalog,
+    AboutDialog,
     AboutCurvas,
     Opportunities,
     QuickStartDialog,
@@ -72,7 +76,7 @@ export default {
   }
 }
 
-.dialog {
+.quick-start-dialog {
   margin-top: -180px !important;
   z-index: 3;
   position: relative;
@@ -81,5 +85,11 @@ export default {
 .catalog {
   margin-top: -100px;
   padding-top: 120px;
+}
+
+.about-dialog {
+  position: absolute;
+  margin-top: -100px;
+  right: 10px;
 }
 </style>
