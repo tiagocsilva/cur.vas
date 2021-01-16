@@ -1,10 +1,10 @@
 <template>
   <div class="login flex-center">
-    <div class="login-background">ads</div>
+    <div class="login-background"></div>
     <b-container class="login-container">
       <img
         class="logo"
-        src="../assets/images/logo.png"
+        src="../assets/images/logo.svg"
       />
 
       <div class="login-form-container mt-4">

@@ -1,7 +1,7 @@
 <template>
   <div class="top-menu-item">
     <span v-if="logo != null">
-      <img src="../../assets/images/logo.png" />
+      <img src="../../assets/images/logo.svg" />
     </span>
 
     <span v-else-if="button != null">
