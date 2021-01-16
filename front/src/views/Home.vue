@@ -5,11 +5,11 @@
     <div class="home-background">
 
       <div class="home-content">
-        <h1 class="pt-5">
+        <h2 class="p-3 shadow">
           Seja Bem Vindo ao
           <br>
           CUR.VAS
-        </h1>
+        </h2>
       </div>
 
     </div>
@@ -17,6 +17,11 @@
     <quick-start-dialog class="dialog" />
 
     <catalog class="catalog" />
+
+    <br>
+    <br>
+    <br>
+    <br>
 
   </div>
 </template>
@@ -43,10 +48,22 @@ export default {
   width: 100%;
   z-index: 2;
   position: relative;
+  background-attachment: fixed;
 }
 
 .home-content {
-  padding-top: 12%;
+  padding-top: 23vh;
+  color: #fff;
+
+  h2 {
+    background: #fff;
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    border-radius: 20px 5px 20px 5px;
+    color: #333;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  }
 }
 
 .dialog {

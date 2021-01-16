@@ -36,6 +36,12 @@ button {
   padding: 6px 30px;
   border: solid 1px #333;
   border-radius: 20px;
+
+  transition: all 0.2s;
+
+  &:hover {
+    background: #e7e7e7 !important;
+  }
 }
 
 button.dark {

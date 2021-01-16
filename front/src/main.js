@@ -7,9 +7,12 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import VueScrollmagic from 'vue-scrollmagic';
 import '@/assets/scss/custom.scss';
 
 Vue.config.productionTip = false
+
+Vue.use(VueScrollmagic);
 
 new Vue({
   router,
