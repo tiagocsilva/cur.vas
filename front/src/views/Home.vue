@@ -29,7 +29,7 @@
 <script>
 import TopMenu from "@/components/TopMenu/TopMenu.vue";
 import QuickStartDialog from "@/components/QuickStartDialog.vue";
-import Catalog from "@/components/Catalog.vue";
+import Catalog from "@/components/Catalog/Catalog.vue";
 
 export default {
   components: {
