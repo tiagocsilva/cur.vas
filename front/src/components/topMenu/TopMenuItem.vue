@@ -38,14 +38,13 @@ export default {
   }
 
   border-bottom: solid 2px transparent;
-
-  cursor: pointer;
 }
 
 .link-animate {
   display: inline-block;
   color: #2c3e50;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .link-animate::after {

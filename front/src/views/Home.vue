@@ -17,9 +17,9 @@
     <quick-start-dialog class="dialog" />
 
     <catalog class="catalog" />
+    
+    <opportunities />
 
-    <br>
-    <br>
     <br>
     <br>
 
@@ -30,12 +30,14 @@
 import TopMenu from "@/components/topMenu/TopMenu.vue";
 import QuickStartDialog from "@/components/QuickStartDialog.vue";
 import Catalog from "@/components/catalog/Catalog.vue";
+import Opportunities from '@/components/opportunities/Opportunities.vue';
 
 export default {
   components: {
     TopMenu,
     Catalog,
     QuickStartDialog,
+    Opportunities,
   },
 };
 </script>
