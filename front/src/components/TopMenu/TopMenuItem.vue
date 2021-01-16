@@ -27,7 +27,7 @@ export default {
   padding: 10px;
 
   img {
-    height: 80px;
+    height: 55px;
   }
 }
 </style>

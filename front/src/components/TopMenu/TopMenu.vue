@@ -1,7 +1,7 @@
 <template>
   <b-navbar
     fixed="top"
-    class="top-menu flex-center shadow-sm"
+    class="top-menu flex-center shadow"
   >
 
     <top-menu-item title="Nosso Catálogo" />
@@ -28,7 +28,6 @@ export default {
   background: #fff;
   text-align: center;
   margin: auto;
-
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 30px 30px;
 }
 </style>
