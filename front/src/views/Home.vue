@@ -90,6 +90,6 @@ export default {
 .about-dialog {
   position: absolute;
   margin-top: -100px;
-  right: 10px;
+  right: 7vw;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <section class="catalog pl-4">
 
-    <b-container fluid>
-      <h1 class="pt-2">Nosso catálogo</h1>
+    <b-container>
+      <h1 class="pt-4">Nosso catálogo</h1>
 
       talvez aqui podemos colocar uma frase de motivação pra fazer o curso.
 

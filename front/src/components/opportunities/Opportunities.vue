@@ -2,7 +2,6 @@
   <section class="opportunities pl-4">
 
     <b-container
-      fluid
       class="text-right"
     >
       <h1 class="pt-5 text-left">As Oportunidades</h1>

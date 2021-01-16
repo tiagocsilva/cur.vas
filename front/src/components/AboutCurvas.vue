@@ -1,7 +1,7 @@
 <template>
-  <section class="about-curvas p-4">
+  <section class="about-curvas p-1">
 
-    <b-container fluid>
+    <b-container>
       <h1>O que é Cur.Vas?</h1>
 
       <p class="mt-5">
