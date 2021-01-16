@@ -31,6 +31,25 @@ body {
   justify-content: center;
 }
 
+button {
+  background: #FFF;
+  padding: 6px 30px;
+  border: solid 1px #333;
+  border-radius: 20px;
+}
+
+button.dark {
+  background: #C4C4C4;
+}
+
+input[type="text"], input[type="password"] {
+  border-radius: 30px;
+}
+
+.no-border {
+  border: none;
+}
+
 /* Router Transition */
 .fade-enter-active,
 .fade-leave-active {

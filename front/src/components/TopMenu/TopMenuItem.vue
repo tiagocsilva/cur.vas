@@ -5,7 +5,9 @@
     </span>
 
     <span v-else-if="button != null">
-      <button>Entrar</button>
+      <router-link to="/login">
+        <button>Entrar</button>
+      </router-link>
     </span>
 
     <span v-else>

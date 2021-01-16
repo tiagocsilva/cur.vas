@@ -7,7 +7,7 @@
     <br>
     <br>
 
-    <button>Vamos lá!!</button>
+    <button class="dark no-border">Vamos lá!!</button>
   </div>
 </template>
 
