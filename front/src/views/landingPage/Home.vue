@@ -4,7 +4,7 @@
 
       <div class="home-content">
         <h2 class="p-3 shadow">
-          Seja Bem Vindo ao
+          Seja Bem Vindo à
           <br>
           Cur.Vas
         </h2>
@@ -14,7 +14,7 @@
 
     <quick-start-dialog class="quick-start-dialog" />
 
-    <catalog class="catalog" />
+    <catalog class="catalog-section" />
 
     <opportunities />
 
@@ -72,7 +72,7 @@ export default {
   position: relative;
 }
 
-.catalog {
+.catalog-section {
   margin-top: -100px;
   padding-top: 120px;
 }

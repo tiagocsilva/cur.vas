@@ -57,7 +57,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .catalog {
   background: #c4c4c4;
   min-height: 300px;
