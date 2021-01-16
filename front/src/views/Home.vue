@@ -26,9 +26,7 @@
 
     <like-proposal />
 
-    <br>
-    <br>
-
+    <landing-footer />
   </div>
 </template>
 
@@ -40,6 +38,7 @@ import Opportunities from "@/components/opportunities/Opportunities.vue";
 import AboutCurvas from "@/components/AboutCurvas.vue";
 import AboutDialog from "@/components/AboutDialog.vue";
 import LikeProposal from "@/components/likeProposal/LikeProposal.vue";
+import LandingFooter from "@/components/LandingFooter.vue";
 
 export default {
   components: {
@@ -48,6 +47,7 @@ export default {
     AboutDialog,
     LikeProposal,
     AboutCurvas,
+    LandingFooter,
     Opportunities,
     QuickStartDialog,
   },
