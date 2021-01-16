@@ -27,9 +27,9 @@
 </template>
 
 <script>
-import TopMenu from "@/components/TopMenu/TopMenu.vue";
+import TopMenu from "@/components/topMenu/TopMenu.vue";
 import QuickStartDialog from "@/components/QuickStartDialog.vue";
-import Catalog from "@/components/Catalog/Catalog.vue";
+import Catalog from "@/components/catalog/Catalog.vue";
 
 export default {
   components: {
