@@ -1,5 +1,5 @@
 <template>
-  <section class="opportunities pl-4">
+  <section class="opportunities">
 
     <b-container
       class="text-right"

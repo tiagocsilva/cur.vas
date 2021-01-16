@@ -1,5 +1,5 @@
 <template>
-  <section class="catalog pl-4">
+  <section class="catalog">
 
     <b-container>
       <h1 class="pt-4">Nosso catálogo</h1>

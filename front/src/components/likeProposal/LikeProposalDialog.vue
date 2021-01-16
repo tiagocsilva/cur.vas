@@ -1,17 +1,15 @@
 <template>
-  <div class="like-proposal-dialog flex-center shadow">
+  <dialog-box class="like-proposal-dialog flex-center shadow" style="width: 350px">
     Vamos lá!!
-  </div>
+  </dialog-box>
 </template>
 
-<style lang="scss">
-.like-proposal-dialog {
-  background: #fff;
-  width: 350px;
-  min-height: 150px;
-  max-width: 90%;
-  margin: auto;
-  border-radius: 30px;
-  padding: 40px;
-}
-</style>
+<script>
+import DialogBox from "@/components/DialogBox";
+
+export default {
+  components: {
+    DialogBox,
+  },
+};
+</script>

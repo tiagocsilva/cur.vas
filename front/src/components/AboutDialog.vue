@@ -1,17 +1,15 @@
 <template>
-  <div class="about-dialog flex-center shadow">
+  <dialog-box class="about-dialog flex-center shadow" style="min-height: 150px">
     aqui podemos falar sobre as mentorias?
-  </div>
+  </dialog-box>
 </template>
 
-<style lang="scss">
-.about-dialog {
-  background: #fff;
-  width: 550px;
-  min-height: 150px;
-  max-width: 90%;
-  margin: auto;
-  border-radius: 30px;
-  padding: 40px;
-}
-</style>
+<script>
+import DialogBox from "@/components/DialogBox";
+
+export default {
+  components: {
+    DialogBox,
+  },
+};
+</script>
