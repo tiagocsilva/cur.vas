@@ -24,6 +24,8 @@
 
     <about-curvas />
 
+    <like-proposal />
+
     <br>
     <br>
 
@@ -37,12 +39,14 @@ import Catalog from "@/components/catalog/Catalog.vue";
 import Opportunities from "@/components/opportunities/Opportunities.vue";
 import AboutCurvas from "@/components/AboutCurvas.vue";
 import AboutDialog from "@/components/AboutDialog.vue";
+import LikeProposal from "@/components/likeProposal/LikeProposal.vue";
 
 export default {
   components: {
     TopMenu,
     Catalog,
     AboutDialog,
+    LikeProposal,
     AboutCurvas,
     Opportunities,
     QuickStartDialog,
