@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .cursor-pointer {
@@ -32,7 +32,7 @@ body {
 }
 
 button {
-  background: #FFF;
+  background: #fff;
   padding: 6px 30px;
   border: solid 1px #333;
   border-radius: 20px;
@@ -45,15 +45,25 @@ button {
 }
 
 button.dark {
-  background: #C4C4C4;
+  background: #c4c4c4;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
   border-radius: 30px;
 }
 
 .no-border {
   border: none;
+}
+
+.top-background {
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background-attachment: fixed;
 }
 
 /* Router Transition */

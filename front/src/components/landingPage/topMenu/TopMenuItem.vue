@@ -1,24 +1,31 @@
 <template>
   <div class="top-menu-item">
     <span v-if="logo != null">
-      <img src="../../assets/images/logo.svg" />
+      <router-link :to="to">
+        <img src="@/assets/images/logo.svg" />
+      </router-link>
     </span>
 
     <span v-else-if="button != null">
-      <router-link to="/login">
+      <router-link :to="to">
         <button>Entrar</button>
       </router-link>
     </span>
 
-    <span v-else class="link-animate">
-      {{title}}
+    <span v-else>
+      <router-link
+        :to="to"
+        class="link-animate"
+      >
+        {{title}}
+      </router-link>
     </span>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["title", "logo", "button"],
+  props: ["title", "logo", "button", "to"],
 };
 </script>
 
@@ -28,6 +35,14 @@ export default {
   max-width: 250px;
   padding: 10px;
   font-weight: bold;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #49637e;
+    }
+  }
 
   img {
     height: 55px;
@@ -42,7 +57,7 @@ export default {
 
 .link-animate {
   display: inline-block;
-  color: #2c3e50;
+  color: #49637e;
   text-decoration: none;
   cursor: pointer;
 }
@@ -52,7 +67,7 @@ export default {
   display: block;
   width: 0;
   height: 2px;
-  background: #2c3e50;
+  background: #49637e;
   transition: width 0.3s;
 }
 
