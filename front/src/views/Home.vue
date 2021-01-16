@@ -8,7 +8,7 @@
         <h2 class="p-3 shadow">
           Seja Bem Vindo ao
           <br>
-          CUR.VAS
+          Cur.Vas
         </h2>
       </div>
 
@@ -19,6 +19,8 @@
     <catalog class="catalog" />
     
     <opportunities />
+
+    <about-curvas />
 
     <br>
     <br>
@@ -31,13 +33,15 @@ import TopMenu from "@/components/topMenu/TopMenu.vue";
 import QuickStartDialog from "@/components/QuickStartDialog.vue";
 import Catalog from "@/components/catalog/Catalog.vue";
 import Opportunities from '@/components/opportunities/Opportunities.vue';
+import AboutCurvas from '@/components/AboutCurvas.vue';
 
 export default {
   components: {
     TopMenu,
     Catalog,
-    QuickStartDialog,
+    AboutCurvas,
     Opportunities,
+    QuickStartDialog,
   },
 };
 </script>
