@@ -1,6 +1,13 @@
 <template>
   <div>
 
+    <router-link
+      to="/login"
+      class="back-button color-alert"
+    >
+      <arrow-left-circle-icon size="2x"></arrow-left-circle-icon>
+    </router-link>
+
     <img
       class="logo mt-5 mb-5"
       src="../assets/images/logo.svg"
@@ -51,6 +58,16 @@
   </div>
 </template>
 
+<script>
+import { ArrowLeftCircleIcon } from "vue-feather-icons";
+
+export default {
+  components: {
+    ArrowLeftCircleIcon
+  }
+};
+</script>
+
 <style lang="scss" scoped>
 .logo {
   height: 130px;
@@ -60,12 +77,18 @@
   background: $primary;
   border-radius: 20px;
   padding: 50px;
-  color: #FFF;
+  color: #fff;
   max-width: 700px;
 }
 
 .form-label {
   width: 150px;
   text-align: left;
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
 }
 </style>

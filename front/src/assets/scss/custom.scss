@@ -63,6 +63,11 @@ button.btn-alert {
   }
 }
 
+button.outline-alert {
+  border-color: $alert;
+  color: $alert;
+}
+
 .color-alert {
   color: $alert;
 }

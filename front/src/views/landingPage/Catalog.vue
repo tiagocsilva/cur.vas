@@ -50,6 +50,7 @@ export default {
 <style lang="scss">
 .catalog-background {
   background: url("../../assets/images/catalog_background.jpg");
+  background-position-y: bottom !important;
   height: 50vh !important;
   max-height: 400px;
 }
