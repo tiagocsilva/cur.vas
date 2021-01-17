@@ -3,29 +3,38 @@
 
     <div class="carrers-background top-background">
 
-      <div class="carrers-content">
-        <h1>
-          Nossa trilha de carreira é muito legal!
-        </h1>
-      </div>
+      <b-container class="carrers-content text-left text-right">
+
+        <div class="text-container">
+          <h1 class="text-right">
+            Nossa trilha de carreira é muito legal!
+          </h1>
+
+          <br>
+
+          <p>Aqui vai um texto bem legal tbm,explicando sobre as trilhas de carreiras Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+
+      </b-container>
+
+      <card-box
+        class="card-box-carrers mt-5"
+        description="Orientação Profissional"
+      />
 
     </div>
-
-    <b-container class="text-left text-right mt-5 mb-5">
-
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-
-    </b-container>
 
   </div>
 </template>
 
 <script>
 import Team from "@/components/landingPage/team/Team.vue";
+import CardBox from "@/components/CardBox.vue";
 
 export default {
   components: {
     Team,
+    CardBox,
   },
 };
 </script>
@@ -33,12 +42,46 @@ export default {
 <style lang="scss">
 .carrers-background {
   background: url("../../assets/images/carrers_background.jpg");
-  height: 45vh !important;
-  max-height: 400px;
+  height: 100vh !important;
+  background-position: fixed;
 }
 
 .carrers-content {
   padding-top: 25vh;
   color: #fff;
+}
+
+.text-container {
+  width: 700px;
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.card-box-carrers {
+  background: $alert;
+  color: #fff;
+  width: 250px;
+  height: 100px;
+
+  margin-left: 100px !important;
+
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    height: 150px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card-box-carrers {
+    margin: auto !important;
+    margin-top: 30px !important;
+    text-align: center;
+  }
 }
 </style>
