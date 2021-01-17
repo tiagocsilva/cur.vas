@@ -5,6 +5,7 @@
         name="Tiago Silva"
         acting="Desenvolvedor"
         :image="require('@/assets/images/team/TiagoSilva.jpg')"
+        :link="`${linkedinBaseUrl}/tiagocs`"
       />
     </b-col>
 
@@ -13,6 +14,7 @@
         name="Jéssica Vial"
         acting="Psicóloga"
         :image="require('@/assets/images/team/JessicaVial.jpg')"
+        :link="`${linkedinBaseUrl}/jessica-vial`"
       />
     </b-col>
 
@@ -21,6 +23,7 @@
         name="Caroline de Victa"
         acting="UX Designer"
         :image="require('@/assets/images/team/CarolineVicta.jpg')"
+        :link="`${linkedinBaseUrl}/caroline-de-victa-27866498`"
       />
     </b-col>
 
@@ -29,6 +32,7 @@
         name="Karina Araújo"
         acting="UX e Desenvolvedora"
         :image="require('@/assets/images/team/KarinaAraujo.jpg')"
+        :link="`${linkedinBaseUrl}/karinadsaraujo`"
       />
     </b-col>
 
@@ -37,6 +41,7 @@
         name="Gabriel Vieira"
         acting="Business"
         :image="require('@/assets/images/team/GabrielVieira.jpg')"
+        :link="`${linkedinBaseUrl}/gvieiraf`"
       />
     </b-col>
 
@@ -58,6 +63,11 @@ export default {
   components: {
     TeamItem,
   },
+  computed: {
+    linkedinBaseUrl() {
+      return "https://linkedin.com/in"
+    }
+  }
 };
 </script>
 

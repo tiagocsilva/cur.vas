@@ -1,18 +1,24 @@
 <template>
-  <div class="team-item mb-5">
-    <div
-      :style="style"
-      class="team-item-image"
-    ></div>
-    <br>
-    <b>{{name}}</b>
-    <div class="color-alert">{{acting}}</div>
-  </div>
+  <a
+    :href="link"
+    class="team-item-link"
+    target="_blank"
+  >
+    <div class="team-item mb-5">
+      <div
+        :style="style"
+        class="team-item-image"
+      ></div>
+      <br>
+      <b>{{name}}</b>
+      <div class="color-alert">{{acting}}</div>
+    </div>
+  </a>
 </template>
 
 <script>
 export default {
-  props: ["name", "image", "acting"],
+  props: ["name", "image", "acting", "link"],
   computed: {
     style() {
       return {
@@ -25,6 +31,17 @@ export default {
 </script>
 
 <style lang="scss">
+.team-item-link {
+  color: #222;
+
+  transition: all 0.2s;
+
+  &:hover {
+    text-decoration: none;
+    color: #222;
+  }
+}
+
 .team-item-image {
   width: 100%;
   height: 30vh;
@@ -36,6 +53,5 @@ export default {
 .team-item {
   min-width: 120px;
   max-width: 190px;
-  
 }
 </style>
