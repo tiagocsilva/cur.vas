@@ -10,7 +10,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: "questions",
+                model: "Questions",
                 key: "id",
             },
         },
@@ -24,12 +24,12 @@ module.exports = function (sequelize, DataTypes) {
         },
     });
 
-    QuestionAnswer.associate = (models) => {
-        QuestionAnswer.hasOne(models.Question, {
-            foreignKey: "id",
-            sourceKey: "questionId",
-        });
-    };
+    // QuestionAnswer.associate = (models) => {
+    //     QuestionAnswer.hasOne(models.Question, {
+    //         foreignKey: "id",
+    //         sourceKey: "questionId",
+    //     });
+    // };
 
     return QuestionAnswer;
 };

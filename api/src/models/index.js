@@ -22,10 +22,11 @@ const models = {
   QuestionAnswer: require("./questionAnswer")(sequelize, Sequelize.DataTypes),
 }
 
-Promise.all([models.Question.sync(), models.QuestionAnswer.sync()]).then(() => {
-  models.Question.associate(models);
-  models.QuestionAnswer.associate(models);
-  sequelize.sync();
-});
+models.Question.sync().then(() => {
+  models.QuestionAnswer.sync().then(() => {
+    models.Question.associate(models);
+    sequelize.sync();
+  })
+})
 
 module.exports = models;
