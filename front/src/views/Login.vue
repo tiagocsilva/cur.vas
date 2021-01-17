@@ -42,7 +42,12 @@
       </div>
 
       <div class="mt-5 text-right">
-        Ainda não faz parte? <b>Cadastre-se</b> :)
+        Ainda não faz parte?
+
+        <router-link to="/register" class="color-alert">
+          <b>Cadastre-se</b>
+        </router-link>
+        :)
       </div>
 
     </b-container>

@@ -43,7 +43,6 @@ export default {
 .carrers-background {
   background: url("../../assets/images/carrers_background.jpg");
   height: 100vh !important;
-  background-position: fixed;
 }
 
 .carrers-content {

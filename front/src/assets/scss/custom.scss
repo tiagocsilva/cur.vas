@@ -4,7 +4,7 @@
 
 html,
 body {
-  background-color: #efefef;
+  background-color: #FFF;
   color: #333;
 }
 
@@ -84,6 +84,13 @@ input[type="password"] {
   position: relative;
   background-attachment: fixed;
   background-position: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .top-background {
+    background-attachment: scroll;
+  }
 }
 
 /* Router Transition */
