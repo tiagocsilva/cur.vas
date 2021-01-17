@@ -1,17 +1,18 @@
 <template>
-  <div class="team-item">
+  <div class="team-item mb-5">
     <div
       :style="style"
       class="team-item-image"
     ></div>
     <br>
     <b>{{name}}</b>
+    <div class="color-alert">{{acting}}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["name", "image"],
+  props: ["name", "image", "acting"],
   computed: {
     style() {
       return {
@@ -26,8 +27,8 @@ export default {
 <style lang="scss">
 .team-item-image {
   width: 100%;
-  height: 25vh;
-  background-position-x: center !important;
+  height: 30vh;
+  background-position: center !important;
   border-radius: 20px;
   max-height: 200px;
 }

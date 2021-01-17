@@ -2,43 +2,49 @@
   <b-row class="team-row">
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/1.jpg')"
+        name="Tiago Silva"
+        acting="Desenvolvedor"
+        :image="require('@/assets/images/team/TiagoSilva.jpg')"
       />
     </b-col>
 
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/2.jpg')"
+        name="Jéssica Vial"
+        acting="Psicóloga"
+        :image="require('@/assets/images/team/JessicaVial.jpg')"
       />
     </b-col>
 
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/3.jpg')"
+        name="Caroline de Victa"
+        acting="UX Designer"
+        :image="require('@/assets/images/team/CarolineVicta.jpg')"
       />
     </b-col>
 
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/4.jpg')"
+        name="Karina Araújo"
+        acting="UX e Desenvolvedora"
+        :image="require('@/assets/images/team/KarinaAraujo.jpg')"
       />
     </b-col>
 
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/5.jpg')"
+        name="Gabriel Vieira"
+        acting="Business"
+        :image="require('@/assets/images/team/GabrielVieira.jpg')"
       />
     </b-col>
 
     <b-col>
       <team-item
-        name="Nome Lindo"
-        :image="require('@/assets/images/team/6.jpg')"
+        name="Joara Paula"
+        acting="Marketing"
+        :image="require('@/assets/images/team/JoaraPaula.jpg')"
       />
     </b-col>
 

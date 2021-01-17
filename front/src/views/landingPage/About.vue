@@ -5,7 +5,7 @@
 
       <div class="about-content">
         <h1>
-          Quem é o time 196?
+          Quem é o <span class="color-alert">time 196</span>?
         </h1>
       </div>
 
@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss">
 .about-background {
-  background: url("../../assets/images/about_background.jpg");
+  background: $primary;
   height: 50vh !important;
   max-height: 400px;
 }
@@ -53,7 +53,7 @@ export default {
 }
 
 .about-text-container {
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 </style>
