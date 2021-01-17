@@ -9,27 +9,20 @@
         Confira vagas e oportunidades de emprego na sua áres em apenas alguns minutos
       </p>
 
-      <b-row class="mt-4">
-        <b-col class="mb-3">
-          <card-box :image="require('@/assets/images/companies/google.svg')" />
-        </b-col>
+      <div class="d-flex justify-content-end flex-wrap">
 
-        <b-col class="mb-3">
-          <card-box :image="require('@/assets/images/companies/nubank.svg')" />
-        </b-col>
+        <card-box :image="require('@/assets/images/companies/google.svg')" class="m-2" />
 
-        <b-col class="mb-3">
-          <card-box :image="require('@/assets/images/companies/picpay.svg')" />
-        </b-col>
+        <card-box :image="require('@/assets/images/companies/nubank.svg')" class="m-2" />
 
-        <b-col>
-          <card-box
-            description="E muito mais!"
-            class="last-catalog-card"
-          />
-        </b-col>
+        <card-box :image="require('@/assets/images/companies/picpay.svg')" class="m-2" />
 
-      </b-row>
+        <card-box
+          description="E muito mais!"
+          class="last-catalog-card m-2"
+        />
+
+      </div>
 
       <div class="mt-5 text-left text-space">
         Você conhece o nosso programa de Mentoria?<br>
@@ -55,6 +48,11 @@ export default {
   min-height: 300px;
   text-align: left;
   padding-bottom: 130px;
+
+  .card {
+    width: 220px;
+    height: 140px;
+  }
 }
 
 .last-opportunities-card {

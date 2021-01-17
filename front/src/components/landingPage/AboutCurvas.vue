@@ -24,6 +24,7 @@
 
   p {
     width: 800px;
+    max-width: 90%;
   }
 }
 </style>

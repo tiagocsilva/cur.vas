@@ -1,6 +1,6 @@
 <template>
   <b-card
-    :class="{ 'card-box': true, 'flex-center': image  }"
+    :class="{ 'card-box': true, 'shadow': true, 'flex-center': image  }"
     ref="cardBox"
   >
 
@@ -56,7 +56,7 @@ export default {
 
   img {
     margin-top: 20px;
-    width: 110px;
+    width: 180px;
   }
 }
 </style>
