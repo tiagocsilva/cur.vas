@@ -18,8 +18,14 @@ const sequelize = new Sequelize(
 
 const models = {
   User: require("./user")(sequelize, Sequelize.DataTypes),
+  Question: require("./question")(sequelize, Sequelize.DataTypes),
+  QuestionAnswer: require("./questionAnswer")(sequelize, Sequelize.DataTypes),
 }
 
-sequelize.sync();
+Promise.all([models.Question.sync(), models.QuestionAnswer.sync()]).then(() => {
+  models.Question.associate(models);
+  models.QuestionAnswer.associate(models);
+  sequelize.sync();
+});
 
 module.exports = models;
