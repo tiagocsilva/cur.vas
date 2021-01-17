@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss">
 .home-background {
-  background: url("../../assets/images/home_background.svg");
+  background: url("../../assets/images/home_background.jpg");
 }
 
 .home-content {

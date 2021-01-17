@@ -9,58 +9,48 @@
         Conquieste seu futuro!
       </div>
 
-      <b-row class="cards-row">
-        <b-col
-          cols="2"
-          class="mb-3 mx-3"
-        >
+      <div class="cards flex-wrap">
+        <div class="mb-3">
           <card-box
+            class="mx-3"
             title="WEB"
             description="Desenvolva ‌sistemas‌ ‌para‌ ‌web,‌ ‌‌utilizando‌ ‌linguagem‌ ‌CSS,‌ ‌HTML‌ ‌e‌ ‌Javascript‌.‌ Aprenda a criar sites, lojas virtuais e aplicativos para internet!"
           />
-        </b-col>
+        </div>
 
-        <b-col
-          cols="2"
-          class="mb-3 mx-3"
-        >
+        <div class="mb-3">
           <card-box
+            class="mx-3"
             title="IOT"
             description="Aprenda ‌a integrar ‌dispositivos‌ ‌moveis a ‌máquinas‌ ‌e‌ ‌equipamentos, ‌‌aplicando‌ ‌os‌ ‌princípios‌ ‌da‌ ‌programação!"
           />
-        </b-col>
+        </div>
 
-        <b-col
-          cols="2"
-          class="mb-3 mx-3"
-        >
+        <div class="mb-3">
           <card-box
+            class="mx-3"
             title="DATA MANAGEMENT"
             description="Seja um Cientista de Dados!  Por meio de aplicações práticas, você poderá executar as principais tarefas de um ambiente de Business Intelligence: Extração, Transformação e Carga de Dados."
           />
-        </b-col>
+        </div>
 
-        <b-col
-          cols="2"
-          class="mb-3 mx-3"
-        >
+        <div class="mb-3">
           <card-box
+            class="mx-3"
             title="MARKETING DIGITAL"
             description="Melhore a performece e resultados, aprendendo a cmo analisar campanhas. O curso contempla módulos sobre Google Ads, Facebook e Instagram Ads, SEO e Email Marketing."
           />
-        </b-col>
+        </div>
 
-        <b-col
-          cols="2"
-          class="mb-3 mx-3"
-        >
+        <div class="mb-3">
           <card-box
             description="Conheça nosso catálogo completo"
-            class="last-catalog-card"
+            class="last-catalog-card mb-3 mx-3"
           />
-        </b-col>
+        </div>
 
-      </b-row>
+      </div>
+
     </b-container>
 
   </section>
@@ -86,10 +76,20 @@ export default {
 </style>
 
 <style lang="scss">
-.cards-row {
+.cards {
   color: #000;
+  height: 100%;
+
+  margin: 0 -10px;
+
   .card {
     background: $details1;
+    width: 150px !important;
+    max-width: 180px !important;
+    min-width: 180px !important;
+    display: flex;
+    align-self: stretch;
+    margin: 0 10px;
   }
 
   .card-title {
@@ -99,9 +99,14 @@ export default {
   .card-text {
     font-size: 12px !important;
   }
+}
 
-  .col-2 {
-    min-width: 190px !important;
+@media only screen and (max-width: 600px) {
+  .cards > div, .cards .card {
+    flex-grow: 1;
+    max-width: 100% !important;
+    width: calc(100% - 30px) !important;
+    margin: auto;
   }
 }
 
@@ -112,5 +117,22 @@ export default {
     justify-content: center;
     text-align: center;
   }
+}
+</style>
+
+
+<style lang="scss">
+.cards {
+  display: flex;
+  // margin: 0 -10px;
+}
+
+.card {
+  width: 200px;
+  //  margin: 0 10px;
+}
+
+img {
+  max-width: 100%;
 }
 </style>

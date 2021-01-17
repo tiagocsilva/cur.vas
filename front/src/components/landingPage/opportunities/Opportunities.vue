@@ -67,4 +67,10 @@ export default {
   width: 600px;
   max-width: 90%;
 }
+
+@media only screen and (max-width: 600px) {
+  .opportunities .card {
+    flex-grow: 1;
+  }
+}
 </style>
