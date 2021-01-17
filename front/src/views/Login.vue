@@ -102,7 +102,6 @@ export default {
 .login-background {
   background-image: url("../assets/images/login_background.jpg");
   background-size: cover;
-  // position: fixed;
 }
 
 .login-container {
@@ -134,7 +133,6 @@ export default {
 
 .login-input {
   background: $background2;
-  // color: #000;
 }
 
 .back-button {
