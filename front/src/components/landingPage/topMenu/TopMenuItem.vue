@@ -33,7 +33,6 @@ export default {
 .top-menu-item {
   width: 100%;
   max-width: 250px;
-  padding: 10px;
   font-weight: bold;
 
   a {
@@ -45,7 +44,7 @@ export default {
   }
 
   img {
-    height: 55px;
+    height: 70px;
   }
 
   button {
@@ -54,6 +53,8 @@ export default {
 
   border-bottom: solid 2px transparent;
 }
+
+
 
 .link-animate {
   display: inline-block;

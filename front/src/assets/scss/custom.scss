@@ -5,6 +5,7 @@
 html,
 body {
   background-color: #efefef;
+  color: #333;
 }
 
 .cursor-pointer {
@@ -40,12 +41,30 @@ button {
   transition: all 0.2s;
 
   &:hover {
-    background: #e7e7e7 !important;
+    background: #e7e7e7;
   }
 }
 
-button.dark {
-  background: #c4c4c4;
+button.secondary {
+  background: $secondary;
+  color: #FFF;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+button.btn-alert {
+  background: $alert;
+  color: #FFF;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.color-alert {
+  color: $alert;
 }
 
 input[type="text"],

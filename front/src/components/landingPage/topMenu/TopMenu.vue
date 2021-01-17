@@ -1,7 +1,7 @@
 <template>
   <b-navbar
     fixed="top"
-    class="top-menu flex-center shadow"
+    class="top-menu flex-center shadow py-0"
   >
 
     <top-menu-item title="Nosso Catálogo" to="/catalog" />

@@ -1,6 +1,6 @@
 <template>
   <dialog-box class="about-dialog flex-center shadow" style="min-height: 150px">
-    aqui podemos falar sobre as mentorias?
+    Conheça nosso programa de Mentoria
   </dialog-box>
 </template>
 

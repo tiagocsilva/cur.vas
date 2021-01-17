@@ -2,38 +2,39 @@
   <section class="catalog">
 
     <b-container>
-      <h1 class="pt-4">Nosso catálogo</h1>
+      <h1 class="pt-4">Conheça nossos cursos</h1>
 
       <div class="mb-4">
-        talvez aqui podemos colocar uma frase de motivação pra fazer o curso.
+        Autonomia na hora de estudar e preparação para o mercado de trabalho em um só lugar!
+        Conquieste seu futuro!
       </div>
 
-      <b-row>
+      <b-row class="cards-row">
         <b-col class="mb-3">
           <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            title="WEB"
+            description="Desenvolva ‌sistemas‌ ‌para‌ ‌web,‌ ‌‌utilizando‌ ‌linguagem‌ ‌CSS,‌ ‌HTML‌ ‌e‌ ‌Javascript‌.‌ Aprenda a criar sites, lojas virtuais e aplicativos para internet!"
           />
         </b-col>
 
         <b-col class="mb-3">
           <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            title="IOT"
+            description="Aprenda ‌a integrar ‌dispositivos‌ ‌moveis a ‌máquinas‌ ‌e‌ ‌equipamentos, ‌‌aplicando‌ ‌os‌ ‌princípios‌ ‌da‌ ‌programação!"
           />
         </b-col>
 
         <b-col class="mb-3">
           <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            title="DATA MANAGEMENT"
+            description="Seja um Cientista de Dados!  Por meio de aplicações práticas, você poderá executar as principais tarefas de um ambiente de Business Intelligence: Extração, Transformação e Carga de Dados."
           />
         </b-col>
 
         <b-col class="mb-3">
           <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            title="MARKETING DIGITAL"
+            description="Melhore a performece e resultados, aprendendo a cmo analisar campanhas. O curso contempla módulos sobre Google Ads, Facebook e Instagram Ads, SEO e Email Marketing."
           />
         </b-col>
 
@@ -61,10 +62,11 @@ export default {
 
 <style lang="scss" scoped>
 .catalog {
-  background: #c4c4c4;
+  background: $primary;
   min-height: 300px;
   text-align: left;
   padding-bottom: 50px;
+  color: #fff;
 }
 
 .last-catalog-card {
@@ -72,6 +74,15 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+</style>
+
+<style lang="scss">
+.cards-row {
+  color: #000;
+  .card {
+    background: $details1;
   }
 }
 </style>

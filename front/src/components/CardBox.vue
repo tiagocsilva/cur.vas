@@ -1,19 +1,28 @@
 <template>
   <b-card
-    class="card-box"
+    :class="{ 'card-box': true, 'flex-center': image  }"
     ref="cardBox"
   >
-    <b-card-title>{{title}}</b-card-title>
 
-    <b-card-text>
-      {{description}}
-    </b-card-text>
+    <img
+      :src="image"
+      v-if="image"
+    />
+
+    <div v-else>
+      <b-card-title class="text-center">{{title}}</b-card-title>
+
+      <b-card-text>
+        {{description}}
+      </b-card-text>
+    </div>
+
   </b-card>
 </template>
 
 <script>
 export default {
-  props: ["title", "description"],
+  props: ["title", "description", "image"],
   mounted() {
     const scene = this.$scrollmagic
       .scene({
@@ -38,11 +47,16 @@ export default {
 .card-box {
   min-width: 200px;
   margin: 10px 0px;
-  border-bottom-right-radius: 30px;
   height: 100%;
   opacity: 0;
   transition: all 0.5s;
   transform: scale(0.3);
   border: none;
+  border-bottom-right-radius: 30px;
+
+  img {
+    margin-top: 20px;
+    width: 110px;
+  }
 }
 </style>

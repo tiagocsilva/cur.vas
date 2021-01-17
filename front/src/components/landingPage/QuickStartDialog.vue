@@ -7,7 +7,7 @@
     <br>
     <br>
 
-    <button class="dark no-border">Vamos lá!!</button>
+    <button class="btn-alert no-border">Vamos lá!!</button>
   </dialog-box>
 </template>
 

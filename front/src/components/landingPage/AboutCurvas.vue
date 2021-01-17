@@ -5,7 +5,7 @@
       <h1>O que é Cur.Vas?</h1>
 
       <p class="mt-5">
-        Aqui também vai um texto bem legal sobre o Cur.Vas hehe. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A Cur.Vas é um projeto de capacitação e orientação para o mercado de trabalho de Tecnologia. Com a proposta de democratizar o acesso à educação e aos processos seletivos, elaboramos essa plataforma para aproximar o jovem das oportunidades que o espera.
       </p>
 
     </b-container>
@@ -15,11 +15,12 @@
 
 <style lang="scss">
 .about-curvas {
-  background: #c4c4c4;
+  background: $primary;
+  color: #FFF;
   min-height: 300px;
   text-align: left;
   padding-top: 70px !important;
-  padding-bottom: 60px !important;
+  padding-bottom: 70px !important;
 
   p {
     width: 800px;

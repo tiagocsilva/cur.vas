@@ -1,53 +1,39 @@
 <template>
   <section class="opportunities">
 
-    <b-container
-      class="text-right"
-    >
+    <b-container class="text-right">
       <h1 class="pt-5 text-left">As Oportunidades</h1>
 
-      <p class="text-space ml-auto">eu queria colocar um texto bem legal explicando sobre as oportunidades mas eu to sem criatividade nesse momento hihi</p>
- 
+      <p class="text-space ml-auto">
+        Trabalhe nas melhores empresas do Brasil!<br>
+        Confira vagas e oportunidades de emprego na sua áres em apenas alguns minutos
+      </p>
+
       <b-row class="mt-4">
         <b-col class="mb-3">
-          <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
-          />
+          <card-box :image="require('@/assets/images/companies/google.svg')" />
         </b-col>
 
         <b-col class="mb-3">
-          <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
-          />
+          <card-box :image="require('@/assets/images/companies/nubank.svg')" />
         </b-col>
 
         <b-col class="mb-3">
-          <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
-          />
+          <card-box :image="require('@/assets/images/companies/picpay.svg')" />
         </b-col>
 
-        <b-col class="mb-3">
+        <b-col>
           <card-box
-            title="Card Title"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
-          />
-        </b-col>
-
-        <b-col class="mb-3">
-          <card-box
-            description="Conheça todas as nossas oportunidades"
-            class="last-opportunities-card"
+            description="E muito mais!"
+            class="last-catalog-card"
           />
         </b-col>
 
       </b-row>
 
-      <div class="mt-5 text-left text-space font-italic">
-        e explicar um pouco sobre a orientação : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      <div class="mt-5 text-left text-space">
+        Você conhece o nosso programa de Mentoria?<br>
+        Aqui, você conta com a assistencia de um time de especialistas para te auxiliar e orientar nessa jordada.
       </div>
 
     </b-container>
@@ -80,7 +66,7 @@ export default {
 }
 
 .text-space {
-    width: 700px;
-    max-width: 90%;
+  width: 600px;
+  max-width: 90%;
 }
 </style>

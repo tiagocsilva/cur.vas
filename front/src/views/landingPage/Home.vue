@@ -4,9 +4,7 @@
 
       <div class="home-content">
         <h2 class="p-3 shadow">
-          Seja Bem Vindo à
-          <br>
-          Cur.Vas
+          Boas-vindas à Cur.Vas
         </h2>
       </div>
 
@@ -48,21 +46,20 @@ export default {
 
 <style lang="scss">
 .home-background {
-  background: url("../../assets/images/home_background2.jpg");
+  background: url("../../assets/images/home_background.svg");
 }
 
 .home-content {
-  padding-top: 23vh;
+  padding-top: calc(95vh - 320px);
   color: #fff;
 
   h2 {
     background: #fff;
-    width: 500px;
+    width: 550px;
     max-width: 90%;
     margin: auto;
     border-radius: 20px 5px 20px 5px;
     color: #333;
-    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
   }
 }
 

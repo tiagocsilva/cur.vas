@@ -24,3 +24,10 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.like-proposal {
+  background: $secondary;
+  color: #fff;
+}
+</style>

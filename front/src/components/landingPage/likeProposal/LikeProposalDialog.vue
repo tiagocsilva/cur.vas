@@ -1,5 +1,8 @@
 <template>
-  <dialog-box class="like-proposal-dialog flex-center shadow" style="width: 350px">
+  <dialog-box
+    class="like-proposal-dialog flex-center shadow"
+    style="width: 350px"
+  >
     Vamos lá!!
   </dialog-box>
 </template>
@@ -13,3 +16,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.like-proposal-dialog {
+  background: $alert;
+}
+</style>
