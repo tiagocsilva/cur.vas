@@ -42,8 +42,8 @@ export default {
       questions: [],
       currentQuestion: [],
       answers: [],
-      showStartInstructions: true,
-      quizStarted: true,
+      showStartInstructions: false,
+      quizStarted: false,
     };
   },
   methods: {

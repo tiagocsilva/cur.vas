@@ -29,7 +29,7 @@
           E-mail
         </div>
         <div class="w-100">
-          <b-input />
+          <b-input v-model="register.email" />
         </div>
       </div>
 
@@ -38,7 +38,10 @@
           Senha
         </div>
         <div class="w-100">
-          <b-input type="password" />
+          <b-input
+            type="password"
+            v-model="register.senha"
+          />
         </div>
       </div>
 
@@ -51,7 +54,20 @@
         </div>
       </div>
 
-      <button class="btn-alert float-right">Próxima</button>
+      <button
+        class="btn-alert float-right"
+        @click="doRegister"
+        :disabled="loading"
+      >
+
+        <font-awesome-icon
+          v-if="loading"
+          :icon="['fas', 'spinner']"
+          spin
+        />
+
+        <span v-else>Próxima</span>
+      </button>
 
     </b-container>
 
@@ -59,12 +75,33 @@
 </template>
 
 <script>
+import * as registerService from "@/api/register";
 import { ArrowLeftCircleIcon } from "vue-feather-icons";
 
 export default {
   components: {
-    ArrowLeftCircleIcon
-  }
+    ArrowLeftCircleIcon,
+  },
+  data() {
+    return {
+      register: {},
+      loading: false,
+    };
+  },
+  methods: {
+    doRegister() {
+      this.loading = true;
+      registerService
+        .register(this.register)
+        .then((res) => {
+          console.log(res.data);
+          this.$router.push({
+            path: "/pretest",
+          });
+        })
+        .finally(() => (this.loading = false));
+    },
+  },
 };
 </script>
 
