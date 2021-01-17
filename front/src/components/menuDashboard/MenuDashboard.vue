@@ -109,7 +109,7 @@ export default {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  background: #c4c4c4;
+  background: #030720;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   flex-direction: column;

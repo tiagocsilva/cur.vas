@@ -2,9 +2,9 @@
   <div>
     <menu-dashboard />
 
-    <logged-user />
+    <!-- <logged-user /> -->
 
-    <div style="margin-left: 100px; margin-top: 150px">
+    <div style="margin-left: 80px; margin-right: 10px; margin-top: 150px; position: relative">
       <transition name="fade">
         <router-view />
       </transition>
