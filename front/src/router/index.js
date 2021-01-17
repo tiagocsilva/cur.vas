@@ -5,6 +5,7 @@ import dashboardRouter from './dashboardRouter';
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
+import PreTest from '../views/PreTest.vue'
 import Dashboard from '../views/Dashboard.vue'
 
 Vue.use(VueRouter)
@@ -25,6 +26,11 @@ const routes = [
     path: '/register',
     name: 'Register',
     component: Register
+  },
+  {
+    path: '/pretest',
+    name: 'PreTest',
+    component: PreTest
   },
   {
     path: '/dashboard',

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-
 html,
 body {
   background-color: #FFF;
   color: #333;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .cursor-pointer {
@@ -19,11 +19,6 @@ body {
 .toast {
   opacity: 1 !important;
   max-width: 95% !important;
-}
-
-.font-destaque {
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
 }
 
 .flex-center {
@@ -63,6 +58,15 @@ button.btn-alert {
   }
 }
 
+button.btn-details2 {
+  background: $details2;
+  color: #FFF;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 button.outline-alert {
   border-color: $alert;
   color: $alert;
@@ -91,6 +95,13 @@ input[type="password"] {
   background-position: center;
 }
 
+.bg-alert {
+  background: $alert;
+}
+
+.bg-primary {
+  background: $primary !important;
+}
 
 @media only screen and (max-width: 600px) {
   .top-background {

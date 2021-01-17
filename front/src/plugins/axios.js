@@ -3,25 +3,52 @@
 import Vue from 'vue';
 import axios from "axios";
 
-// Full config:  https://github.com/axios/axios#request-config
-// axios.defaults.baseURL = process.env.baseURL || process.env.apiUrl || '';
-// axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+axios.defaults.baseURL = process.env.VUE_APP_BASE_API_URL;
 
-let config = {
-  // baseURL: process.env.baseURL || process.env.apiUrl || ""
-  // timeout: 60 * 1000, // Timeout
-  // withCredentials: true, // Check cross-site Access-Control
-};
+const vm = new Vue({
+  methods: {
+    showErr: function (msg, title, type) {
+      this.$toastr(type || "error", {
+        msg: msg,
+        title: title ?? "Erro :(",
+        position: 'toast-top-full-width',
+        timeout: 10000,
+        clickClose: true
+      });
+    }
+  }
+});
+
+axios.interceptors.response.use(
+  response => response,
+  err => {
+    if (err.response.status != 401) {
+      if (err.response) {
+        let errToShow = err.response.data || err;
+
+        if ((errToShow.erro || errToShow.error) && errToShow.message)
+          errToShow = errToShow.message;
+
+        const validate = err.response.status == 422;
+
+        vm.showErr(errToShow, validate ? 'Validação' : null, validate ? 'warning' : null);
+      } else vm.showErr("Ocorreu um erro, entre em contato com o pessoal da Cur.Vas.");
+    }
+    return Promise.reject(err);
+  }
+);
+
 
 const _axios = axios.create(config);
 
+let config = {}
+
 _axios.interceptors.request.use(
-  function(config) {
+  function (config) {
     // Do something before request is sent
     return config;
   },
-  function(error) {
+  function (error) {
     // Do something with request error
     return Promise.reject(error);
   }
@@ -29,17 +56,17 @@ _axios.interceptors.request.use(
 
 // Add a response interceptor
 _axios.interceptors.response.use(
-  function(response) {
+  function (response) {
     // Do something with response data
     return response;
   },
-  function(error) {
+  function (error) {
     // Do something with response error
     return Promise.reject(error);
   }
 );
 
-Plugin.install = function(Vue, options) {
+Plugin.install = function (Vue, options) {
   Vue.axios = _axios;
   window.axios = _axios;
   Object.defineProperties(Vue.prototype, {

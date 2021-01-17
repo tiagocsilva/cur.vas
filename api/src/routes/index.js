@@ -1,4 +1,5 @@
 
 const user = require("./userRoute");
+const question = require("./questionRoute");
 
-module.exports = { user }
+module.exports = { user, question }
