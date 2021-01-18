@@ -2,7 +2,7 @@
 <div>
   <div class="flex-center logged-user">
 
-    <div class="mr-3 text-right">
+    <div class="mr-3 text-right user-name">
       Olá,<br>
       <b>Fulano!</b>
     </div>
@@ -23,7 +23,7 @@
   // background-color: red;
 }
 
-.text-right{
+.user-name{
   font-size: 1.5em;
   line-height: 1.2em;
 }
