@@ -10,7 +10,7 @@
     />
 
     <div v-else>
-      <b-card-title class="text-center">{{title}}</b-card-title>
+      <b-card-title v-if="title" class="text-center">{{title}}</b-card-title>
 
       <b-card-text>
         {{description}}

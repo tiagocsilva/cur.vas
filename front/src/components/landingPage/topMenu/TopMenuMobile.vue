@@ -67,6 +67,11 @@
           class="m-3"
         />
         <top-menu-item
+          title="Vagas"
+          to="/opportunities"
+          class="m-3"
+        />
+        <top-menu-item
           button="Entrar"
           to="/login"
           class="mt-2 mb-4"
