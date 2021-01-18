@@ -3,13 +3,17 @@
 
     <b-container class="text-left pt-5 pb-5 flex-center">
 
-      <div>
+      <div class="mr-auto">
         <h1>Curtiu nossa proposta?</h1>
 
         <p>Registre-se agora e tenha acesso a conteúdos e oportunidades exclusivas!</p>
       </div>
 
-      <like-proposal-dialog class="like-proposal-dialog" />
+      <div>
+        <like-proposal-dialog text="Empresa" bg-color="#BBD5BA" class="like-proposal-dialog" />
+        <br>
+        <like-proposal-dialog text="Estudante" bg-color="#FF683B" class="like-proposal-dialog" />
+      </div>
 
     </b-container>
 

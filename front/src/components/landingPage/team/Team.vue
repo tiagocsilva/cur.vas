@@ -50,6 +50,7 @@
         name="Joara Paula"
         acting="Marketing"
         :image="require('@/assets/images/team/JoaraPaula.jpg')"
+        :link="`${linkedinBaseUrl}/joara-p-de-gouveia-aa4038168`"
       />
     </b-col>
 

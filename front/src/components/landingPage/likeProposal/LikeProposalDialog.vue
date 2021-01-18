@@ -2,9 +2,9 @@
   <router-link to="/login" class="link-proposal">
     <dialog-box
       class="like-proposal-dialog flex-center shadow"
-      style="width: 350px"
+      :style="style"
     >
-      Vamos lá!!
+      {{text}}
     </dialog-box>
   </router-link>
 </template>
@@ -13,15 +13,26 @@
 import DialogBox from "@/components/DialogBox";
 
 export default {
+  props: ['text', 'bgColor'],
   components: {
     DialogBox,
   },
+  computed: {
+    style() {
+      return {
+        background: this.bgColor
+      }
+    }
+  }
 };
 </script>
 
 <style lang="scss">
 .like-proposal-dialog {
-  background: $alert;
+  width: 350px;
+  font-size: 20px;
+  padding: 30px;
+  font-weight: bold;
 }
 
 .link-proposal {

@@ -1,11 +1,11 @@
 <template>
   <section class="catalog">
 
-    <b-container>
-      <h1 class="pt-4">Conheça nossos cursos</h1>
+    <b-container class="pt-3">
+      <h1 class="pt-5">Conheça nossos cursos</h1>
 
       <div class="mb-4">
-        Autonomia na hora de estudar e preparação para o mercado de trabalho em um só lugar!
+        Autonomia na hora de <span class="color-alert font-weight-bold">estudar</span> e preparação para o <span class="color-alert font-weight-bold">mercado de trabalho</span> em um só lugar!
         Conquieste seu futuro!
       </div>
 
@@ -67,11 +67,10 @@ export default {
 
 <style lang="scss" scoped>
 .catalog {
-  background: $primary;
   min-height: 300px;
   text-align: left;
   padding-bottom: 50px;
-  color: #fff;
+  color: #333;
 }
 </style>
 

@@ -12,11 +12,11 @@
 
     <quick-start-dialog class="quick-start-dialog" />
 
-    <catalog class="catalog-section" />
-
     <opportunities />
 
     <about-dialog class="about-dialog" />
+
+    <catalog class="catalog-section" />
 
     <about-curvas />
 

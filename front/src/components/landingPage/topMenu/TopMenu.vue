@@ -4,9 +4,10 @@
     class="top-menu flex-center shadow py-0"
   >
 
-    <top-menu-item title="Nosso Catálogo" to="/catalog" />
-    <top-menu-item title="Trilha de Carreiras" to="/carrers" />
     <top-menu-item :logo="true" to="/" />
+    <top-menu-item title="Nosso Catálogo" to="/catalog" />
+    <top-menu-item title="Para Empresas" to="/carrers" />
+    <top-menu-item title="Vagas" to="/opportunities" />
     <top-menu-item title="Sobre Nós" to="/about" />
     <top-menu-item button="Entrar" to="/login" />
 
