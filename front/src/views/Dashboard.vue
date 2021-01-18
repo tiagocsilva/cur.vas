@@ -6,7 +6,7 @@
             <logged-user />
         </header>
 
-        <section class="aread">
+        <section>
           <dash-pagina-inicial />
         </section>
     </div>
@@ -25,11 +25,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-    .aread{
-        width: 100%;
-        top:0;
-    }
-
-</style>

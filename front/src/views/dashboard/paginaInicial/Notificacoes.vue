@@ -1,6 +1,6 @@
 <template>
     <div>
-        <b-icon icon="arrows-angle-expand"></b-icon>
+        <b-icon icon="arrows-angle-expand" class="expand"></b-icon>
         <h2 class="titulos-dashboard">Notificações</h2>  
 
         <div class="notificacoes-card">

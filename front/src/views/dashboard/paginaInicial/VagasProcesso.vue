@@ -2,12 +2,12 @@
     <b-row style="margin-left:0; margin-right:0" align-h="center">
         <b-col class="col-11 area-medalhas">
             <b-row style="margin:0; flex-wrap: no-wrap">
-                <b-col class="col-5 cardsDash" id="dash-m" style="background-color: #f0f0f0">
-                    teste
+                <b-col class="col-5 cardsDash" style="background-color: #f0f0f0;">
+                    <ultimas-vagas />
                 </b-col>
 
-                <b-col class="col-5 cardsDash" id="dash-m" style="background-color: #f0f0f0">
-                    teste
+                <b-col class="col-5 cardsDash" style="background-color: #f0f0f0">
+                    <processos-seletivos />
                 </b-col>
 
                 <b-col class="col-2">
@@ -28,12 +28,13 @@
 </template>
 
 <script>
+import ProcessosSeletivos from './ProcessosSeletivos.vue'
+import UltimasVagas from './UltimasVagas.vue'
 export default {
+  components: { 
+      UltimasVagas,
+      ProcessosSeletivos,
+  },
 
 }
 </script>
-
-<style lang="scss" >
-
-
-</style>
