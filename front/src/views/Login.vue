@@ -4,7 +4,10 @@
 
     <b-container class="login-container">
 
-      <router-link to="/" class="back-button color-alert">
+      <router-link
+        to="/"
+        class="back-button color-alert"
+      >
         <arrow-left-circle-icon size="2x"></arrow-left-circle-icon>
       </router-link>
 
@@ -19,11 +22,13 @@
             type="text"
             placeholder="e-mail"
             class="login-input"
+            v-model="email"
           />
         </div>
 
         <div class="mt-3">
           <b-input
+            v-model="senha"
             type="password"
             placeholder="senha"
             class="login-input"
@@ -34,7 +39,22 @@
           esqueceu a senha?
         </div>
 
-        <button class="mt-4 px-5 no-border btn-alert shadow">acesse já!</button>
+        <button
+          class="mt-4 px-5 no-border btn-alert shadow"
+          @click="doLogin"
+        >
+
+          <font-awesome-icon
+            v-if="loading"
+            :icon="['fas', 'spinner']"
+            spin
+          />
+
+          <span v-else>
+            acesse já!
+          </span>
+
+        </button>
 
         <div class="mt-5 text-left">
           ...ou acesse utilizando:
@@ -74,6 +94,8 @@
 </template>
 
 <script>
+import * as authService from "@/api/auth";
+
 import {
   ArrowLeftCircleIcon,
   LinkedinIcon,
@@ -89,6 +111,29 @@ export default {
     GithubIcon,
     FacebookIcon,
     TwitterIcon,
+  },
+  data() {
+    return {
+      loading: false,
+      email: "",
+      senha: "",
+    };
+  },
+  methods: {
+    doLogin() {
+      this.loading = true;
+      authService
+        .login({
+          email: this.email,
+          senha: this.senha,
+        })
+        .then((res) => {
+          this.$router.push({
+            path: "/dashboard",
+          });
+        })
+        .finally(() => (this.loading = false));
+    },
   },
 };
 </script>
