@@ -57,7 +57,7 @@
           class="m-3 mt-4"
         />
         <top-menu-item
-          title="Trilha de Carreiras"
+          title="Para Empresas"
           to="/companies"
           class="m-3"
         />
