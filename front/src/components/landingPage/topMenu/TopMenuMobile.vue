@@ -58,7 +58,7 @@
         />
         <top-menu-item
           title="Trilha de Carreiras"
-          to="/carrers"
+          to="/companies"
           class="m-3"
         />
         <top-menu-item

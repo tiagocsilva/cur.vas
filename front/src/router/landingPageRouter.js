@@ -1,7 +1,7 @@
 import Home from "@/views/landingPage/Home.vue";
 import About from "@/views/landingPage/About.vue";
 import Catalog from "@/views/landingPage/Catalog.vue";
-import Carrers from "@/views/landingPage/Carrers.vue";
+import Companies from "@/views/landingPage/Companies.vue";
 import Opportunities from "@/views/landingPage/Opportunities.vue";
 
 export default [
@@ -26,8 +26,8 @@ export default [
         component: Opportunities,
     },
     {
-        path: "/carrers",
-        name: "carres",
-        component: Carrers,
+        path: "/companies",
+        name: "companies",
+        component: Companies,
     }
 ];

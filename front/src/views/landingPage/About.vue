@@ -64,7 +64,7 @@ export default {
 }
 
 .about-topics {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 }
 
 .about-topics li::before {
