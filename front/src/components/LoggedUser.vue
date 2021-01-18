@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="flex-center">
+  <div class="flex-center logged-user">
 
     <div class="mr-3 text-right">
       Olá,<br>
@@ -16,9 +16,16 @@
 <style lang="scss">
 .logged-user {
   position: absolute;
-  // right: 50px;
-  // top: 30px;
-  background: red
+  height: 20%;
+  padding: 20px;
+  right: 0;
+  top: 0;
+  // background-color: red;
+}
+
+.text-right{
+  font-size: 1.5em;
+  line-height: 1.2em;
 }
 
 .user-image {

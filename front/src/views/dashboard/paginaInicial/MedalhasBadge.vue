@@ -14,7 +14,7 @@ export default {
 <style lang="scss">
     .badge-medalha{
         height: 100px;
-        width: 100%;
+        width: 100px;
         background: url('./badges/testebadge.png') no-repeat center
     }
 
