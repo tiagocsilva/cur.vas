@@ -1,13 +1,17 @@
 <template>
-    <b-row style="margin-right:0; margin-left:0; margin-top: 10px; flex-wrap: no-wrap">
-        <b-col col lg="6" id="dash-m">
-            <curso-andamento/>
-        </b-col>
+        <b-row style="margin-left:0; margin-right:0" align-h="center">
+            <b-col class="col-11 area-infos-cn" style="background-color: red;">
+                <b-row>
+                    <div class="col-6 cardsDash" style="background-color: #f0f0f0; margin-left: -15px; margin-right:15px">
+                        <curso-andamento/>
+                    </div>
 
-        <b-col col lg="6" id="dash-m">
-            <notificacoes />
-        </b-col>
-    </b-row>
+                    <div class="col-6 cardsDash" style="background-color: #f0f0f0">
+                        <notificacoes />
+                    </div>
+                </b-row>
+            </b-col>
+        </b-row>
 </template>
 
 <script>
@@ -21,9 +25,19 @@ export default {
 </script>
 
 <style lang="scss">
-    #dash-m{
-        background-color: #f0f0f0;
+    .area-infos-cn{
         border-bottom-right-radius: 30px;
         border-top-left-radius: 30px;
+        height: 30%;
+        margin-left: 80px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    .cardsDash{
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 100%;
+        padding-right: 0px;
     }
 </style>

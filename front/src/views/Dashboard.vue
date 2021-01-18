@@ -1,25 +1,35 @@
 <template>
-  <div>
-    <menu-dashboard />
+    <div>
+        <menu-dashboard />
 
-    <!-- <logged-user /> -->
+        <header>
+            <logged-user />
+        </header>
 
-    <div style="margin-left: 80px; margin-right: 10px; margin-top: 150px; position: relative">
-      <transition name="fade">
-        <router-view />
-      </transition>
+        <section class="aread">
+          <dash-pagina-inicial />
+        </section>
     </div>
-  </div>
 </template>
 
 <script>
-import MenuDashboard from "@/components/menuDashboard/MenuDashboard.vue";
-import LoggedUser from "@/components/LoggedUser.vue";
+import LoggedUser from "@/components/LoggedUser.vue"
+import MenuDashboard from "@/components/menuDashboard/MenuDashboard.vue"
+import DashPaginaInicial from './dashboard/paginaInicial/DashPaginaInicial.vue'
 
 export default {
-  components: {
-    LoggedUser,
-    MenuDashboard,
-  },
-};
+    components: {
+        MenuDashboard,
+        LoggedUser,
+        DashPaginaInicial,
+    }
+}
 </script>
+
+<style lang="scss">
+    .aread{
+        width: 100%;
+        top:0;
+    }
+
+</style>

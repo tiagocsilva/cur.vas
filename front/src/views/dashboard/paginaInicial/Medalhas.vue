@@ -1,18 +1,16 @@
 <template>
-    <div class="area-medalhas">
-        <b-row style="margin-right:0; margin-left:0">
-            <div class="icones">
-                <b-icon icon="arrows-angle-expand"></b-icon>
-            </div>
+    <b-row style="margin-left:0; margin-right:0" align-h="center">
+        <b-col class="col-11 area-medalhas" style="background-color: #f0f0f0">
+            <b-icon icon="arrows-angle-expand" class="expand"></b-icon>
+            <p class="titulos-dashboard">Medalhas Conquistadas</p>
 
-            <h2 class="titulos-dashboard">Medalhas Conquistadas</h2>
-        </b-row>
-    
-        <b-row style="padding-left: 38px">
-            <medalhas-badge/>
-            <medalhas-badge/>
-        </b-row>
-    </div>
+            <b-row style="padding-left: 10px">
+                <medalhas-badge/>
+                <medalhas-badge/>
+            </b-row>
+
+        </b-col>
+    </b-row>
 </template>
 
 <script>
@@ -27,21 +25,25 @@ export default {
 
 <style lang="scss">
     .area-medalhas{
-        background-color:#BBD5BA;
         border-bottom-right-radius: 30px;
         border-top-left-radius: 30px;
+        height: 30%;
+        margin-left: 80px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    .expand{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 1.5rem
     }
 
     .titulos-dashboard{
         text-align: left;
-        padding-left: 50px;
-        padding-top: 10px;
-    }
-
-    .icones{
-        font-size: 2rem;
-        position: absolute;
-        right: 0;
-        padding-right: 10px;
+        padding-left: 10px;
+        font-weight: bold;
+        font-size: 1.5em;
     }
 </style>
