@@ -11,8 +11,6 @@ exports.login = async (user) => {
         }
     });
 
-    console.log(result)
-
     if (result)
         return {
             token: tokenUtil.generateToken(user.email)
