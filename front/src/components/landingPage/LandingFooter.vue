@@ -23,13 +23,14 @@
 
 <style lang="scss">
 .landing-footer {
-  background: #fff;
+  background: #f0f0f0;
   padding: 30px;
 }
 
 .footer-link {
   color: $alert;
-  &:hover, &:active {
+  &:hover,
+  &:active {
     text-decoration: none;
     color: $alert;
     opacity: 0.8;

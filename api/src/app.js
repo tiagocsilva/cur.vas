@@ -7,5 +7,6 @@ const routes = require("./routes");
 app.use(cors());
 app.use(bodyParser.json());
 app.use("/api/user", routes.user);
+app.use("/api/question", routes.question);
 
 module.exports = app;
