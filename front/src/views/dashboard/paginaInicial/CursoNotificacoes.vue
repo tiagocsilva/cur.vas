@@ -1,8 +1,8 @@
 <template>
         <b-row style="margin-left:0; margin-right:0" align-h="center">
-            <b-col class="col-11 area-infos-cn" style="background-color: red;">
+            <b-col class="col-11 area-infos-cn">
                 <b-row>
-                    <div class="col-6 cardsDash" style="background-color: #f0f0f0; margin-left: -15px; margin-right:15px">
+                    <div class="col-6 cardsDash" style="background-color: #f0f0f0;">
                         <curso-andamento/>
                     </div>
 
