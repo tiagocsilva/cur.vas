@@ -37,7 +37,6 @@ export default {
     .cardsDash{
         border-top-left-radius: 30px;
         border-bottom-right-radius: 30px;
-        height: 100%;
         padding-right: 0px;
     }
 </style>

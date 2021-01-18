@@ -62,7 +62,7 @@ export default {
         background-color: #F7873F;
         color: white;
         border: 0px;
-        bottom: 0;
+        // bottom: 0;
         margin-bottom: 10px;
     }
 </style>
